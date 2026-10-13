@@ -1,27 +1,27 @@
 {
-  "name": "coding-harness",
+  "name": "100x",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev":"tsx src/main.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vinayparit007-png/coding-harness.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/vinayparit007-png/coding-harness/issues"
-  },
-  "homepage": "https://github.com/vinayparit007-png/coding-harness#readme",
+  "type": "module",
   "dependencies": {
-    "@types/express": "^5.0.6"
+    "@anthropic-ai/sdk": "^0.131.0",
+    "dotenv": "^18.0.5",
+    "openai": "^7.25.0"
   },
   "devDependencies": {
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
+  },
+  "bin": {
+    "mypi": "./bin/mypi.js"
   }
 }
